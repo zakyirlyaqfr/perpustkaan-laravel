@@ -22,7 +22,7 @@ class JenisUser extends Model
         return $this->hasMany(User::class, 'id_jenis_user');
     }
 
-    // Relasi many-to-many ke Menu
+    // Relasi many-to-many ke Menuu
     public function menus()
     {
         return $this->belongsToMany(Menu::class, 'setting_menu_user', 'id_jenis_user', 'menu_id');

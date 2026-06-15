@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class menuLevel extends Model
+class MenuLevel extends Model
 {
     protected $table = 'menu_level';
     protected $primaryKey = 'id_level';
@@ -19,5 +19,4 @@ class menuLevel extends Model
     {
         return $this->hasMany(Menu::class,'id_level', 'id_level');
     }
-    
 }
